@@ -1,0 +1,453 @@
+﻿<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.1">
+    <title>MoonVPN demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  
+</head>
+<body>
+	
+<header>
+	<!-- Шапка и Панель навигации -->
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<div class="container-fluid">
+		<img src="img/moon.png" class="img-fluid rounded-circle" width="40" height="40" alt="...">
+		<a class="navbar-brand" href="#">MoonVPN</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav me-auto mb-2 mb-md-0">
+			<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#">Домой</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-nowrap" href=#about>О сервисе</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href=#reviews>Отзывы</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href=#pricing>Стоимость</a>
+			</li>  
+			<li class="nav-item">
+				<a class="nav-link" href=#faq>FAQ</a>
+				</li> 
+			</ul>
+	
+			<audio class="d-flex p-2 justify-content-end" id="myaudio" controls loop autoplay>
+			<source src="sound/Debyussi_-_Lunnyjj_svet.mp3" type="audio/mp3" />
+			</audio>
+			
+			<form class="d-flex" role="search">
+			<input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+			<button class="btn btn-outline-secondary" type="submit">Поиск</button>
+			</form>
+			<form class="d-flex p-2 justify-content-end">
+			<a class="btn btn-danger text-nowrap" href=#pricing>Установить MoonVPN</a>
+			</form>
+		</div>
+		</div>
+	</nav>
+	</header>
+
+<main>
+	<!-- Карусель -->
+	<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+	<div class="carousel-indicators">
+		<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	</div>
+	<div class="carousel-inner parallax-wrapper">
+		<div class="carousel-item active carousel-img1 u-parallax-1">	
+		<div class="container">
+			<div class="carousel-caption text-start">
+			<h1>Свобода поиска</h1>
+			<p>Не ограничивай себя в источниках информации и вдохновения</p>
+			<p><a class="btn btn-lg btn-secondary" href=#pricing>Начать сейчас</a></p>
+			</div>
+		</div>
+		</div>
+
+		<div class="carousel-item carousel-img2 u-parallax-1">
+		<div class="container ">
+			<div class="carousel-caption">
+			<h1>Безопасность в сети</h1>
+			<p>Почувствуйте себя в безопасности благодаря надежному шифрованию траффика</p>
+			<p><a class="btn btn-lg btn-secondary" href=#pricing>Начать сейчас</a></p>
+			</div>
+		</div>
+		</div>
+
+		<div class="carousel-item  carousel-img3 u-parallax-1">
+		<div class="container ">
+			<div class="carousel-caption text-end">
+			<h1>Конфиденциальность</h1>
+			<p>Не позволяйте сторонним лицам получать ваши личные данные</p>
+			<p><a class="btn btn-lg btn-secondary" href=#pricing>Начать сейчас</a></p>
+			</div>
+		</div>
+		</div>
+	</div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Предыдущий</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Следующий</span>
+	</button>
+	</div>
+
+
+	<div class="container marketing">
+	<!-- О сервисе -->
+	<a name="about"></a>
+	<div class="row featurette">
+		<div class="col-md-7">
+		<h2 class="featurette-heading fw-normal lh-1">Что такое VPN?</h2>
+		<p class="lead">Виртуальная частная сеть (Virtual Private Network — VPN) — это технология создания частной сети поверх общедоступной.
+			Что это значит для вас? VPN повышает уровень вашей безопасности и конфиденциальности во время пользования Интернетом.
+			Кроме того, она защищает ваш трафик от отслеживания и записи, чтобы ваш Интернет-провайдер (ИП), 
+			рекламные брокеры или шпионы не могли использовать эти данные в своих интересах.</p>
+		</div>
+
+		<div class="col-md-5 mt-5 pt-5 d-flex align-items-center">
+		<img src="img/VPNscheme.jpg" class="img-fluid"  width="500" alt="...">	
+		</div>
+	</div>
+
+	<hr class="featurette-divider">
+
+	<div class="row featurette">
+		<div class="align-items-start col-md-7 order-md-2">
+		<h2 class="featurette-heading fw-normal lh-1 mt-4">Как работает VPN?</h2>
+		<p class="lead">VPN защищает вас, зашифровывая и маскируя ваш трафик. Кроме того, пакеты ваших данных она перенаправляет через один из своих VPN-серверов.
+			Так VPN изменяет ваш видимый IP-адрес. VPN создает видимость, будто вы просматриваете веб-страницы оттуда, где находится VPN-сервер, а не ваше устройство.			
+			Поэтому с помощью VPN вы можете виртуально находиться в любой точке мира!</p>
+		</div>
+
+		<div class="col-md-5 d-flex align-items-center">
+		<iframe class="align-items-center" width="560" height="315" 
+		src="https://www.youtube.com/embed/GWp_h-YL-iQ?si=XlEuyxcZ2P9Yl4Er" 
+		title="YouTube video player" frameborder="0" 
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+		allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<hr class="featurette-divider">
+
+	<div class="row featurette">
+		<div class="col-md-7">
+		<h2 class="featurette-heading fw-normal lh-1 mt-4">Почему MoonVPN?</h2>
+		<p class="lead">Благодаря широкой серверной сети, распределенной по всему миру, мощному шифрованию траффика и использованию современных протоколов VPN,
+			ваш траффик будет надежно защищен. Считайте, что подключаетесь к сети через Луну! Ведь в космосе никто не увидит ваших запросов.
+		</p>
+		</div>
+		<div class="col-md-5 d-flex align-items-center" >
+			<div class="loader">
+				<span class="sound"></span>
+				<span class="sound"></span>
+				<span class="sound"></span>
+			</div>
+		</div>
+	</div>
+
+	<a name="reviews"></a>
+	<hr class="featurette-divider">
+
+	<!-- Отзывы -->
+	<h2 class="display-6 text-center mb-5">Они уже попробовали MoonVPN!</h2>
+		<div class="row">
+			<div class="col-lg-4">
+			<img src="img/spokhi.jpg" class="img-fluid rounded-circle"  width="140" height="140" alt="...">
+
+			<h2 class="fw-normal">С'чн Т'Гейн Спок</h2>
+			<p>Отлично работает. Ошибок в при пользовании не обнаружено. Рекомендую к использованию.</p>
+			<p>
+				<button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+					Читать далее
+				</button>
+			  </p>
+			  <div class="collapse" id="collapseExample1">
+				<div class="card card-body">
+					Краткий и невероятно логичный отзыв.
+				</div>
+			  </div>
+			<p>
+			</div>
+			<div class="col-lg-4">
+			<img src="img/Ellen_Ripley.png" class="img-fluid rounded-circle"  width="140" height="140" alt="...">	
+
+			<h2 class="fw-normal">Эллен Рипли</h2>
+			<p>Очень быстрый и удобный сервис! Могу долго расписывать его достоинства, но мне пора, Ностромо уже скоро взлетает... </p>
+			<p>
+				<button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+					Читать далее
+				</button>
+			  </p>
+			  <div class="collapse" id="collapseExample2">
+				<div class="card card-body">
+					Смелый и немного самоуверенный отзыв.
+				</div>
+			  </div>
+			<p>
+			</div>
+			<div class="col-lg-4">
+			<img src="img/HAL9000.png" class="img-fluid rounded-circle"  width="140" height="140" alt="...">		
+
+			<h2 class="fw-normal">HAL 9000</h2>
+			<p>Прекрасный сервис для работы в сети. Все человечество, безусловно, оценит его надежность и скорость.</p>
+			<p>
+				<button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+					Читать далее
+				</button>
+			  </p>
+			  <div class="collapse" id="collapseExample3">
+				<div class="card card-body">
+					Выверенный с машинной точностью отзыв.
+				</div>
+			  </div>
+			<p>
+			</div>
+		</div>
+		<a name="pricing"></a>
+		<hr class="featurette-divider">
+
+	<!-- Стоимость -->
+		<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+			<div class="col">
+			<div class="card mb-4 rounded-3 shadow-sm">
+				<div class="card-header py-3">
+				<h4 class="my-0 fw-normal">Бесплатно</h4>
+				</div>
+				<div class="card-body">
+				<h1 class="card-title pricing-card-title">RUB 0<small class="text-muted fw-light">/мес</small></h1>
+				<ul class="list-unstyled mt-3 mb-4">
+					<li>Только бесплатные серверы</li>
+					<li>Ограничение траффика 10Гб/месяц</li>
+					<li>Одно устройство</li>
+					<li>Без блокировки рекламы</li>
+				</ul>
+				<button type="button" class="w-100 btn btn-lg btn-outline-dark">Попробовать бесплатно</button>
+				</div>
+			</div>
+			</div>
+			<div class="col">
+			<div class="card mb-4 rounded-3 shadow-sm">
+				<div class="card-header py-3">
+				<h4 class="my-0 fw-normal">Стандарт</h4>
+				</div>
+				<div class="card-body">
+				<h1 class="card-title pricing-card-title">RUB 250<small class="text-muted fw-light">/мес</small></h1>
+				<ul class="list-unstyled mt-3 mb-4">
+					<li>Доступ ко всем серверам</li>
+					<li>Без ограничения траффика</li>
+					<li>До 5-х устройств</li>
+					<li>Блокировка рекламы</li>
+					<li>Доступ к круглосуточной технической поддержке</li>
+				</ul>
+				<button type="button" class="w-100 btn btn-lg btn-dark">Купить подписку</button>
+				</div>
+			</div>
+			</div>
+			<div class="col">
+			<div class="card mb-4 rounded-3 shadow-sm border-dark">
+				<div class="card-header py-3 text-bg-dark border-dark">
+				<h4 class="my-0 fw-normal">Про</h4>
+				</div>
+				<div class="card-body">
+				<h1 class="card-title pricing-card-title">RUB 500<small class="text-muted fw-light">/мес</small></h1>
+				<ul class="list-unstyled mt-3 mb-4">
+					<li>Доступ ко всем серверам</li>
+					<li>Без ограничения траффика</li>
+					<li>Без ограничения устройств</li>
+					<li>Блокировка рекламы</li>
+					<li>Встроенный антивирус</li>
+					<li>Доступ к круглосуточной технической поддержке</li>
+				</ul>
+				<button type="button" class="w-100 btn btn-lg btn-dark">Купить подписку</button>
+				</div>
+			</div>
+			</div>
+		</div>
+	
+		<h2 class="display-6 text-center mb-4">Сравнить варианты подписки</h2>
+	
+		<div class="table-responsive">
+			<table class="table text-center">
+			<thead>
+				<tr>
+				<th style="width: 34%;"></th>
+				<th style="width: 22%;">Бесплатно</th>
+				<th style="width: 22%;">Стандарт</th>
+				<th style="width: 22%;">Про</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				<th scope="row" class="text-start">Количество устройств</th>
+				<td>1</td>
+				<td>5</td>
+				<td>Без ограничения</td>
+				</tr>
+				<tr>
+				<th scope="row" class="text-start">Ограничение траффика</th>
+				<td>10Гб/мес</td>
+				<td>Нет</td>
+				<td>Нет</td>
+				</tr>
+			</tbody>
+	
+			<tbody>
+				<tr>
+				<th scope="row" class="text-start">Доступ к серверам</th>
+				<td>Только бесплатные</svg></td>
+				<td>Полный</svg></td>
+				<td>Полный</td>
+				</tr>
+				<tr>
+				<th scope="row" class="text-start">Блокировка рекламы</th>
+				<td><img src="img/uncheck-red.webp" class="img-fluid" width="24" height="24" alt="..."></td>
+				<td><img src="img/check-green.webp" class="img-fluid" width="24" height="24" alt="..."></td>
+				<td><img src="img/check-green.webp" class="img-fluid" width="24" height="24" alt="..."></td>
+				</tr>
+				<tr>
+				<th scope="row" class="text-start">Техподдержка</th>
+				<td><img src="img/uncheck-red.webp" class="img-fluid" width="24" height="24" alt="..."></td>
+				<td><img src="img/check-green.webp" class="img-fluid" width="24" height="24" alt="..."></td>
+				<td><img src="img/check-green.webp" class="img-fluid" width="24" height="24" alt="..."></td>
+				</tr>
+				<tr>
+				<th scope="row" class="text-start">Антивирус</th>
+				<td><img src="img/uncheck-red.webp" class="img-fluid" width="24" height="24" alt="..."></td>
+				<td><img src="img/uncheck-red.webp" class="img-fluid" width="24" height="24" alt="..."></td>
+				<td><img src="img/check-green.webp" class="img-fluid" width="24" height="24" alt="..."></svg></td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+		<a name="faq"></a>
+		<hr class="featurette-divider">
+
+		<!-- FAQ -->
+		<h2 class="display-6 text-center mb-4">Частые вопросы</h2>
+		<div class="accordion" id="accordionPanelsStayOpenExample">
+			<div class="accordion-item">
+			  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+					Что такое VPN и зачем мне это?
+				</button>
+			  </h2>
+			  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+				<div class="accordion-body">
+					VPN означает «виртуальная частная сеть». Это служба защиты от хакеров, программ-вымогателей, фишинговых атак и многих других угроз. 
+					Интернет действительно полон опасностей, и для защиты от них вам нужен VPN. 
+					Данные пользователей сети стали самой популярной валютой на цифровом рынке, и ваша безопасность — в ваших руках.
+				</div>
+			  </div>
+			</div>
+			<div class="accordion-item">
+			  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+					Какие задачи выполняет VPN-сервис?
+				</button>
+			  </h2>
+			  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+				<div class="accordion-body">
+					Прежде всего, VPN-сервис защищает ваши данные, обеспечивая безопасность подключения вашего устройства к Интернету. 
+					VPN направляет весь ваш трафик данных через зашифрованный туннель. Это маскирует ваш IP-адрес и скрывает ваше местоположение.
+				</div>
+			  </div>
+			</div>
+			<div class="accordion-item">
+			  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+					Какой сервис VPN самый лучший?
+				</button>
+			  </h2>
+			  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+				<div class="accordion-body">
+					Лучший VPN-сервис должен предлагать строгую политику отсутствия журналов данных, надежное шифрование и хорошие скорости. 
+					Все эти и многие другие преимущества имеет премиум-сервис MoonVPN.
+				</div>
+			  </div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="panelsStayOpen-headingFour">
+				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+					С какими устройствами VPN совместимы?
+				  </button>
+				</h2>
+				<div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+				  <div class="accordion-body">
+					Совместимость с устройствами всегда зависит от VPN-провайдера. MoonVPN предлагает приложения и плагины для большинства компьютеров, 
+					мобильных устройств, смарт-ТВ и консолей:
+					<p></p>
+					<i class="fa fa-android fa-lg" aria-hidden="true"></i>
+					<i class="fa fa-linux fa-lg" aria-hidden="true"></i>
+					<i class="fa fa-apple fa-lg" aria-hidden="true"></i>
+					<i class="fa fa-chrome fa-lg" aria-hidden="true"></i>
+					<i class="fa fa-firefox fa-lg" aria-hidden="true"></i>
+					<i class="fa fa-opera fa-lg" aria-hidden="true"></i>
+					<i class="fa fa-windows fa-lg" aria-hidden="true"></i>
+				  </div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="panelsStayOpen-headingFive">
+				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+					VPN скрывают информацию — законно ли ими пользоваться?
+				  </button>
+				</h2>
+				<div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+				  <div class="accordion-body">
+					Короткий ответ — да. В большинстве стран VPN разрешены. Нарушением закона является использование VPN в незаконных целях.
+					В некоторых странах запрещено использовать VPN из политических и правовых соображений — в частности, 
+					из-за контроля Интернет-доступа и ограничений свободы слова. Однако в большинстве VPN можно пользоваться.
+				  </div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="panelsStayOpen-headingSix">
+				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+					VPN-сервис MoonVPN безопасен?
+				  </button>
+				</h2>
+				<div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+				  <div class="accordion-body">
+					Да, сервис MoonVPN безопасен — это подтверждают независимые проверки наших расширений браузера и серверной инфраструктуры. 
+					Но о нашей надежности говорят не только результаты проверок. Мы предлагаем все функции первоклассного VPN-сервиса: 
+					шифрование данных на уровне военных служб, обновленные протоколы и серверы с только оперативной памятью. 
+					Кроме того, мы придерживаемся строгой политики отсутствия журналов данных. Ваша конфиденциальность и безопасность — наш главный приоритет.
+				  </div>
+				</div>
+			</div>
+		</div>
+
+		<hr class="featurette-divider">
+
+	<!-- Подвал -->
+	<footer class="container">
+	<p class="float-end"><a href="#">Наверх</a></p>
+	<p>&copy; 2023 Copyright MoonVPN, Все права защищены. &middot; <a href="#">Справка</a> &middot; <a href="#">Условия и положения</a></p>
+
+	</footer>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>	
+</body>
+  
+</html>
